@@ -1,0 +1,90 @@
+انا_برنامج
+    اسمي: اختبار الحلقات
+    أنظمة_التشغيل: "الكل"
+
+الكود:
+    أنشئ_ملفًا:
+        الاسم: "index.html"
+        المسار: "./"
+        المحتوى:
+            """
+            <!DOCTYPE html>
+            <html lang="ar" dir="rtl">
+            <head>
+                <meta charset="UTF-8">
+                <title>الحلقات</title>
+                <link rel="stylesheet" href="style.css">
+            </head>
+            <body>
+                <h1>اختبار الحلقات</h1>
+                <button id="btn1">عد تصاعدي</button>
+                <button id="btn2">اطبع الأرقام</button>
+                <p id="output"></p>
+            </body>
+            </html>
+            """
+
+    أنشئ_ملفًا:
+        الاسم: "style.css"
+        المسار: "./"
+        المحتوى:
+            """
+            body {
+                font-family: 'Cairo', sans-serif;
+                background: linear-gradient(135deg, #f093fb, #f5576c);
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                margin: 0;
+            }
+            h1 { font-size: 32px; }
+            button {
+                padding: 12px 30px;
+                font-size: 18px;
+                border-radius: 10px;
+                border: none;
+                cursor: pointer;
+                background: white;
+                color: #f5576c;
+                font-weight: bold;
+                margin: 5px;
+            }
+            #output {
+                font-size: 22px;
+                margin-top: 25px;
+                font-weight: bold;
+            }
+            """
+
+    أنشئ_ملفًا:
+        الاسم: "script.js"
+        المسار: "./"
+        المحتوى:
+            """
+            // فارغ
+            """
+
+    أنشئ زر:
+        المعرف: "btn1"
+        النص: "عد تصاعدي"
+        عند_الضغط:
+            متغير العداد = 1
+            متغير النتيجة = ""
+            طالما العداد <= 5:
+                النتيجة = النتيجة + العداد + " "
+                العداد = العداد + 1
+            اعرض_في النتيجة في: "#output"
+
+    # ملاحظة: زر btn2 لازم يبدأ من مستوى CREATE
+
+    أنشئ زر:
+        المعرف: "btn2"
+        النص: "اطبع الأرقام"
+        عند_الضغط:
+            متغير النتيجة = ""
+            لكل رقم في [10, 20, 30, 40]:
+                النتيجة = النتيجة + رقم + " "
+            اعرض_في النتيجة في: "#output"

@@ -1,0 +1,85 @@
+انا_برنامج
+    اسمي: اختبار الدوال
+    أنظمة_التشغيل: "الكل"
+
+الكود:
+    أنشئ_ملفًا:
+        الاسم: "index.html"
+        المسار: "./"
+        المحتوى:
+            """
+            <!DOCTYPE html>
+            <html lang="ar" dir="rtl">
+            <head>
+                <meta charset="UTF-8">
+                <title>الدوال</title>
+                <link rel="stylesheet" href="style.css">
+            </head>
+            <body>
+                <h1>اختبار الدوال</h1>
+                <button id="calc">احسب</button>
+                <p id="output"></p>
+            </body>
+            </html>
+            """
+
+    أنشئ_ملفًا:
+        الاسم: "style.css"
+        المسار: "./"
+        المحتوى:
+            """
+            body {
+                font-family: 'Cairo', sans-serif;
+                background: linear-gradient(135deg, #4facfe, #00f2fe);
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                margin: 0;
+            }
+            h1 { font-size: 32px; }
+            button {
+                padding: 15px 40px;
+                font-size: 20px;
+                border-radius: 12px;
+                border: none;
+                cursor: pointer;
+                background: white;
+                color: #4facfe;
+                font-weight: bold;
+                margin-top: 20px;
+            }
+            #output {
+                font-size: 24px;
+                margin-top: 30px;
+                font-weight: bold;
+            }
+            """
+
+    أنشئ_ملفًا:
+        الاسم: "script.js"
+        المسار: "./"
+        المحتوى:
+            """
+            // فارغ
+            """
+
+    دالة جمع(أ, ب):
+        ارجع أ + ب
+
+    دالة مربع(س):
+        ارجع س * س
+
+    دالة ترحيب(اسم):
+        ارجع "أهلاً " + اسم
+
+    أنشئ زر:
+        المعرف: "calc"
+        النص: "احسب"
+        عند_الضغط:
+            متغير ن1 = جمع(10, 5)
+            متغير ن2 = مربع(7)
+            متغير رسالة = ترحيب("أحمد")
+            اعرض_في رسالة في: "#output"

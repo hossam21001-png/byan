@@ -1,0 +1,125 @@
+انا_برنامج
+    اسمي: اختبار الملفات المتقدم
+    أنظمة_التشغيل: "الكل"
+
+الكود:
+    أنشئ_ملفًا:
+        الاسم: "index.html"
+        المسار: "./"
+        المحتوى:
+            """
+            <!DOCTYPE html>
+            <html lang="ar" dir="rtl">
+            <head>
+                <meta charset="UTF-8">
+                <title>الملفات المتقدم</title>
+                <link rel="stylesheet" href="style.css">
+            </head>
+            <body>
+                <h1>اختبار الملفات المتقدم</h1>
+                <div class="buttons">
+                    <button id="write">اكتب</button>
+                    <button id="read">اقرأ</button>
+                    <button id="copy">انسخ</button>
+                    <button id="move">انقل</button>
+                    <button id="delete">احذف</button>
+                    <button id="list">قائمة الملفات</button>
+                </div>
+                <p id="output" class="byan-output">استنى الضغط...</p>
+            </body>
+            </html>
+            """
+
+    أنشئ_ملفًا:
+        الاسم: "style.css"
+        المسار: "./"
+        المحتوى:
+            """
+            body {
+                font-family: 'Cairo', sans-serif;
+                background: linear-gradient(135deg, #667eea, #764ba2);
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                margin: 0;
+                padding: 20px;
+            }
+            h1 { font-size: 26px; margin-bottom: 20px; }
+            .buttons { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+            button {
+                padding: 12px 22px;
+                font-size: 15px;
+                border-radius: 10px;
+                border: none;
+                cursor: pointer;
+                background: white;
+                color: #667eea;
+                font-weight: bold;
+                transition: transform 0.2s;
+            }
+            button:hover { transform: scale(1.05); }
+            #output {
+                font-size: 16px;
+                margin-top: 25px;
+                max-width: 700px;
+                min-height: 60px;
+                text-align: right;
+                background: rgba(255,255,255,0.15);
+                padding: 20px;
+                border-radius: 12px;
+                white-space: pre-wrap;
+                font-family: 'Courier New', monospace;
+            }
+            """
+
+    أنشئ_ملفًا:
+        الاسم: "script.js"
+        المسار: "./"
+        المحتوى:
+            """
+            // فارغ
+            """
+
+    أنشئ زر:
+        المعرف: "write"
+        النص: "اكتب"
+        عند_الضغط:
+            اكتب "test.txt" فيه "هذا نص تجريبي"
+            اعرض_في "✅ تم الكتابة" في: "#output"
+
+    أنشئ زر:
+        المعرف: "read"
+        النص: "اقرأ"
+        عند_الضغط:
+            اقرأ "test.txt" في: "#output"
+
+    أنشئ زر:
+        المعرف: "copy"
+        النص: "انسخ"
+        عند_الضغط:
+            انسخ "test.txt" إلى "backup_test.txt"
+            اعرض_في "✅ تم النسخ" في: "#output"
+
+    أنشئ زر:
+        المعرف: "move"
+        النص: "انقل"
+        عند_الضغط:
+            انقل "backup_test.txt" إلى "moved_test.txt"
+            اعرض_في "✅ تم النقل" في: "#output"
+
+    أنشئ زر:
+        المعرف: "delete"
+        النص: "احذف"
+        عند_الضغط:
+            احذف "moved_test.txt"
+            اعرض_في "✅ تم الحذف" في: "#output"
+
+    أنشئ زر:
+        المعرف: "list"
+        النص: "قائمة الملفات"
+        عند_الضغط:
+            نفّذ "ls /storage/emulated/0/byan/build"
+            اعرض_في "تم عرض الملفات - شوف Console" في: "#output"

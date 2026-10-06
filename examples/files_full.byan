@@ -1,0 +1,93 @@
+انا_برنامج
+    اسمي: اختبار الملفات الكامل
+    أنظمة_التشغيل: "الكل"
+
+الكود:
+    أنشئ_ملفًا:
+        الاسم: "index.html"
+        المسار: "./"
+        المحتوى:
+            """
+            <!DOCTYPE html>
+            <html lang="ar" dir="rtl">
+            <head>
+                <meta charset="UTF-8">
+                <title>الملفات الكامل</title>
+                <link rel="stylesheet" href="style.css">
+            </head>
+            <body>
+                <h1>اختبار الملفات الكامل</h1>
+                <button id="write">اكتب ملف</button>
+                <button id="read">اقرأ الملف</button>
+                <button id="exec">نفّذ أمر</button>
+                <p id="output">استنى الضغط...</p>
+            </body>
+            </html>
+            """
+
+    أنشئ_ملفًا:
+        الاسم: "style.css"
+        المسار: "./"
+        المحتوى:
+            """
+            body {
+                font-family: 'Cairo', sans-serif;
+                background: linear-gradient(135deg, #4facfe, #00f2fe);
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                margin: 0;
+            }
+            h1 { font-size: 26px; }
+            button {
+                padding: 12px 30px;
+                font-size: 16px;
+                border-radius: 10px;
+                border: none;
+                cursor: pointer;
+                background: white;
+                color: #4facfe;
+                font-weight: bold;
+                margin: 5px;
+            }
+            #output {
+                font-size: 18px;
+                margin-top: 20px;
+                max-width: 600px;
+                text-align: center;
+                background: rgba(255,255,255,0.2);
+                padding: 15px;
+                border-radius: 10px;
+            }
+            """
+
+    أنشئ_ملفًا:
+        الاسم: "script.js"
+        المسار: "./"
+        المحتوى:
+            """
+            // فارغ
+            """
+
+    أنشئ زر:
+        المعرف: "write"
+        النص: "اكتب ملف"
+        عند_الضغط:
+            اكتب "notes.txt" فيه "مرحبا من بيان"
+            اعرض_في "تم الكتابة ✅" في: "#output"
+
+    أنشئ زر:
+        المعرف: "read"
+        النص: "اقرأ الملف"
+        عند_الضغط:
+            اعرض_في "جاري القراءة..." في: "#output"
+
+    أنشئ زر:
+        المعرف: "exec"
+        النص: "نفّذ أمر"
+        عند_الضغط:
+            نفّذ "ls /storage/emulated/0/byan/build"
+            اعرض_في "تم التنفيذ - شوف console" في: "#output"

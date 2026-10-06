@@ -1,0 +1,2106 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>توثيق بيان</title>
+    <style>
+        body { font-family: 'Cairo', sans-serif; padding: 20px; background: #f5f5f5; }
+        h1 { color: #667eea; }
+        .file { background: white; padding: 20px; margin: 15px 0; border-radius: 10px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        pre { background: #1e1e1e; color: #d4d4d4; padding: 15px; border-radius: 8px;
+              overflow-x: auto; direction: rtl; }
+    </style>
+</head>
+<body>
+    <h1>📚 توثيق بيان</h1>
+
+<div class="file">
+<h2>📄 hello.byan</h2>
+<h3>التعليقات:</h3><ul>
+<li>ملف تجريبي - Hello World بلغة بيان</li>
+<li>667eea, #764ba2);</li>
+<li>fff;</li>
+<li>667eea;</li>
+<li>output {</li>
+<li>output"</li>
+</ul>
+<h3>الكود:</h3><pre># ملف تجريبي - Hello World بلغة بيان
+
+انا_برنامج
+    اسمي: "تجربتي"
+    وظيفتي: "عرض رسالة ترحيب"
+    أنظمة_التشغيل: "الكل"
+
+الكود:
+    أنشئ_ملفًا:
+        الاسم: "index.html"
+        المسار: "./"
+        المحتوى:
+            """
+            &lt;!DOCTYPE html>
+            &lt;html lang="ar" dir="rtl">
+            &lt;head>
+                &lt;meta charset="UTF-8">
+                &lt;title>تجربتي&lt;/title>
+                &lt;link rel="stylesheet" href="style.css">
+            &lt;/head>
+            &lt;body>
+                &lt;h1>مرحبًا بك في بيان&lt;/h1>
+                &lt;p>أول برنامج بلغة بيان&lt;/p>
+                &lt;button id="btn">اضغطني&lt;/button>
+                &lt;p id="output">&lt;/p>
+                &lt;script src="script.js">&lt;/script>
+            &lt;/body>
+            &lt;/html>
+            """
+
+    أنشئ_ملفًا:
+        الاسم: "style.css"
+        المسار: "./"
+        المحتوى:
+            """
+            body {
+                font-family: 'Cairo', 'Tahoma', sans-serif;
+                background: linear-gradient(135deg, #667eea, #764ba2);
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                margin: 0;
+                padding: 20px;
+            }
+            h1 { font-size: 42px; margin-bottom: 10px; }
+            button {
+                padding: 15px 40px;
+                font-size: 20px;
+                border-radius: 12px;
+                border: none;
+                cursor: pointer;
+                background: #fff;
+                color: #667eea;
+                font-weight: bold;
+                margin-top: 20px;
+            }
+            #output {
+                font-size: 28px;
+                margin-top: 30px;
+                min-height: 40px;
+            }
+            """
+
+    أنشئ_ملفًا:
+        الاسم: "script.js"
+        المسار: "./"
+        المحتوى:
+            """
+            console.log('بيان يعمل!');
+            """
+
+    أنشئ زر:
+        المعرف: "btn"
+        النص: "اضغطني"
+        عند_الضغط:
+            اعرض "أهلاً بالعالم 👋" في: "#output"
+</pre>
+</div>
+<div class="file">
+<h2>📄 calculator.byan</h2>
+<h3>التعليقات:</h3><ul>
+<li>num1")</li>
+<li>num2")</li>
+<li>result"</li>
+<li>num1")</li>
+<li>num2")</li>
+<li>result"</li>
+<li>num1")</li>
+<li>num2")</li>
+<li>result"</li>
+</ul>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: آلة حاسبة
+    أنظمة_التشغيل: "الكل"
+
+الكود:
+    انشئ نافذة:
+        العنوان: آلة حاسبة
+        لون_الخلفية: أزرق
+
+    انشئ عنوانا:
+        المعرف: "title"
+        النص: آلة حاسبة بسيطة
+        الحجم: 28
+
+    انشئ مدخلا:
+        المعرف: "num1"
+        النص: "الرقم الأول"
+
+    انشئ مدخلا:
+        المعرف: "num2"
+        النص: "الرقم الثاني"
+
+    انشئ زر:
+        المعرف: "add"
+        النص: "اجمع"
+        اللون: أخضر
+        عند_الضغط:
+            متغير أ = اقرأ_قيمة("#num1")
+            متغير ب = اقرأ_قيمة("#num2")
+            متغير الناتج = أ + ب
+            اعرض الناتج في: "#result"
+
+    انشئ زر:
+        المعرف: "sub"
+        النص: "اطرح"
+        اللون: أحمر
+        عند_الضغط:
+            متغير أ = اقرأ_قيمة("#num1")
+            متغير ب = اقرأ_قيمة("#num2")
+            متغير الناتج = أ - ب
+            اعرض الناتج في: "#result"
+
+    انشئ زر:
+        المعرف: "mul"
+        النص: "اضرب"
+        اللون: برتقالي
+        عند_الضغط:
+            متغير أ = اقرأ_قيمة("#num1")
+            متغير ب = اقرأ_قيمة("#num2")
+            متغير الناتج = أ * ب
+            اعرض الناتج في: "#result"
+
+    انشئ نصا:
+        المعرف: "result"
+        النص: "النتيجة هتظهر هنا"
+        الحجم: 24
+</pre>
+</div>
+<div class="file">
+<h2>📄 logic_test.byan</h2>
+<h3>التعليقات:</h3><ul>
+<li>43cea2, #185a9d);</li>
+<li>185a9d;</li>
+<li>output {</li>
+<li>output"</li>
+<li>output"</li>
+</ul>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: "اختبار المنطق"
+    أنظمة_التشغيل: "الكل"
+
+الكود:
+    أنشئ_ملفًا:
+        الاسم: "index.html"
+        المسار: "./"
+        المحتوى:
+            """
+            &lt;!DOCTYPE html>
+            &lt;html lang="ar" dir="rtl">
+            &lt;head>
+                &lt;meta charset="UTF-8">
+                &lt;title>اختبار المنطق&lt;/title>
+                &lt;link rel="stylesheet" href="style.css">
+            &lt;/head>
+            &lt;body>
+                &lt;h1>اختبار المتغيرات والمنطق&lt;/h1>
+                &lt;button id="check">تحقق من العمر&lt;/button>
+                &lt;p id="output">&lt;/p>
+            &lt;/body>
+            &lt;/html>
+            """
+
+    أنشئ_ملفًا:
+        الاسم: "style.css"
+        المسار: "./"
+        المحتوى:
+            """
+            body {
+                font-family: 'Cairo', sans-serif;
+                background: linear-gradient(135deg, #43cea2, #185a9d);
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                margin: 0;
+            }
+            h1 { font-size: 32px; }
+            button {
+                padding: 15px 40px;
+                font-size: 20px;
+                border-radius: 12px;
+                border: none;
+                cursor: pointer;
+                background: white;
+                color: #185a9d;
+                font-weight: bold;
+                margin-top: 20px;
+            }
+            #output {
+                font-size: 28px;
+                margin-top: 30px;
+                font-weight: bold;
+            }
+            """
+
+    أنشئ_ملفًا:
+        الاسم: "script.js"
+        المسار: "./"
+        المحتوى:
+            """
+            // ملف فارغ
+            """
+
+    أنشئ زر:
+        المعرف: "check"
+        النص: "تحقق من العمر"
+        عند_الضغط:
+            متغير العمر = 25
+            لو العمر > 18:
+                اعرض "بالغ ✅" في: "#output"
+            وإلا:
+                اعرض "صغير 👶" في: "#output"
+</pre>
+</div>
+<div class="file">
+<h2>📄 loops_test.byan</h2>
+<h3>التعليقات:</h3><ul>
+<li>f093fb, #f5576c);</li>
+<li>f5576c;</li>
+<li>output {</li>
+<li>output"</li>
+<li>ملاحظة: زر btn2 لازم يبدأ من مستوى CREATE</li>
+<li>output"</li>
+</ul>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: اختبار الحلقات
+    أنظمة_التشغيل: "الكل"
+
+الكود:
+    أنشئ_ملفًا:
+        الاسم: "index.html"
+        المسار: "./"
+        المحتوى:
+            """
+            &lt;!DOCTYPE html>
+            &lt;html lang="ar" dir="rtl">
+            &lt;head>
+                &lt;meta charset="UTF-8">
+                &lt;title>الحلقات&lt;/title>
+                &lt;link rel="stylesheet" href="style.css">
+            &lt;/head>
+            &lt;body>
+                &lt;h1>اختبار الحلقات&lt;/h1>
+                &lt;button id="btn1">عد تصاعدي&lt;/button>
+                &lt;button id="btn2">اطبع الأرقام&lt;/button>
+                &lt;p id="output">&lt;/p>
+            &lt;/body>
+            &lt;/html>
+            """
+
+    أنشئ_ملفًا:
+        الاسم: "style.css"
+        المسار: "./"
+        المحتوى:
+            """
+            body {
+                font-family: 'Cairo', sans-serif;
+                background: linear-gradient(135deg, #f093fb, #f5576c);
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                margin: 0;
+            }
+            h1 { font-size: 32px; }
+            button {
+                padding: 12px 30px;
+                font-size: 18px;
+                border-radius: 10px;
+                border: none;
+                cursor: pointer;
+                background: white;
+                color: #f5576c;
+                font-weight: bold;
+                margin: 5px;
+            }
+            #output {
+                font-size: 22px;
+                margin-top: 25px;
+                font-weight: bold;
+            }
+            """
+
+    أنشئ_ملفًا:
+        الاسم: "script.js"
+        المسار: "./"
+        المحتوى:
+            """
+            // فارغ
+            """
+
+    أنشئ زر:
+        المعرف: "btn1"
+        النص: "عد تصاعدي"
+        عند_الضغط:
+            متغير العداد = 1
+            متغير النتيجة = ""
+            طالما العداد &lt;= 5:
+                النتيجة = النتيجة + العداد + " "
+                العداد = العداد + 1
+            اعرض النتيجة في: "#output"
+
+    # ملاحظة: زر btn2 لازم يبدأ من مستوى CREATE
+
+    أنشئ زر:
+        المعرف: "btn2"
+        النص: "اطبع الأرقام"
+        عند_الضغط:
+            متغير النتيجة = ""
+            لكل رقم في [10, 20, 30, 40]:
+                النتيجة = النتيجة + رقم + " "
+            اعرض النتيجة في: "#output"
+</pre>
+</div>
+<div class="file">
+<h2>📄 functions_test.byan</h2>
+<h3>التعليقات:</h3><ul>
+<li>4facfe, #00f2fe);</li>
+<li>4facfe;</li>
+<li>output {</li>
+<li>output"</li>
+</ul>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: اختبار الدوال
+    أنظمة_التشغيل: "الكل"
+
+الكود:
+    أنشئ_ملفًا:
+        الاسم: "index.html"
+        المسار: "./"
+        المحتوى:
+            """
+            &lt;!DOCTYPE html>
+            &lt;html lang="ar" dir="rtl">
+            &lt;head>
+                &lt;meta charset="UTF-8">
+                &lt;title>الدوال&lt;/title>
+                &lt;link rel="stylesheet" href="style.css">
+            &lt;/head>
+            &lt;body>
+                &lt;h1>اختبار الدوال&lt;/h1>
+                &lt;button id="calc">احسب&lt;/button>
+                &lt;p id="output">&lt;/p>
+            &lt;/body>
+            &lt;/html>
+            """
+
+    أنشئ_ملفًا:
+        الاسم: "style.css"
+        المسار: "./"
+        المحتوى:
+            """
+            body {
+                font-family: 'Cairo', sans-serif;
+                background: linear-gradient(135deg, #4facfe, #00f2fe);
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                margin: 0;
+            }
+            h1 { font-size: 32px; }
+            button {
+                padding: 15px 40px;
+                font-size: 20px;
+                border-radius: 12px;
+                border: none;
+                cursor: pointer;
+                background: white;
+                color: #4facfe;
+                font-weight: bold;
+                margin-top: 20px;
+            }
+            #output {
+                font-size: 24px;
+                margin-top: 30px;
+                font-weight: bold;
+            }
+            """
+
+    أنشئ_ملفًا:
+        الاسم: "script.js"
+        المسار: "./"
+        المحتوى:
+            """
+            // فارغ
+            """
+
+    دالة جمع(أ, ب):
+        ارجع أ + ب
+
+    دالة مربع(س):
+        ارجع س * س
+
+    دالة ترحيب(اسم):
+        ارجع "أهلاً " + اسم
+
+    أنشئ زر:
+        المعرف: "calc"
+        النص: "احسب"
+        عند_الضغط:
+            متغير ن1 = جمع(10, 5)
+            متغير ن2 = مربع(7)
+            متغير رسالة = ترحيب("أحمد")
+            اعرض رسالة في: "#output"
+</pre>
+</div>
+<div class="file">
+<h2>📄 files_test.byan</h2>
+<h3>التعليقات:</h3><ul>
+<li>30cfd0, #330867);</li>
+<li>330867;</li>
+<li>output {</li>
+<li>output"</li>
+<li>output"</li>
+</ul>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: اختبار الملفات
+    أنظمة_التشغيل: "الكل"
+
+الكود:
+    أنشئ_ملفًا:
+        الاسم: "index.html"
+        المسار: "./"
+        المحتوى:
+            """
+            &lt;!DOCTYPE html>
+            &lt;html lang="ar" dir="rtl">
+            &lt;head>
+                &lt;meta charset="UTF-8">
+                &lt;title>الملفات&lt;/title>
+                &lt;link rel="stylesheet" href="style.css">
+            &lt;/head>
+            &lt;body>
+                &lt;h1>اختبار API الملفات&lt;/h1>
+                &lt;button id="create">أنشئ ملف&lt;/button>
+                &lt;button id="read">اقرأ الملف&lt;/button>
+                &lt;p id="output">&lt;/p>
+            &lt;/body>
+            &lt;/html>
+            """
+
+    أنشئ_ملفًا:
+        الاسم: "style.css"
+        المسار: "./"
+        المحتوى:
+            """
+            body {
+                font-family: 'Cairo', sans-serif;
+                background: linear-gradient(135deg, #30cfd0, #330867);
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                margin: 0;
+            }
+            h1 { font-size: 28px; }
+            button {
+                padding: 12px 30px;
+                font-size: 16px;
+                border-radius: 10px;
+                border: none;
+                cursor: pointer;
+                background: white;
+                color: #330867;
+                font-weight: bold;
+                margin: 5px;
+            }
+            #output {
+                font-size: 20px;
+                margin-top: 20px;
+                max-width: 600px;
+                text-align: center;
+            }
+            """
+
+    أنشئ_ملفًا:
+        الاسم: "script.js"
+        المسار: "./"
+        المحتوى:
+            """
+            // فارغ
+            """
+
+    أنشئ زر:
+        المعرف: "create"
+        النص: "أنشئ ملف"
+        عند_الضغط:
+            اعرض "جاري الإنشاء..." في: "#output"
+
+    أنشئ زر:
+        المعرف: "read"
+        النص: "اقرأ الملف"
+        عند_الضغط:
+            اعرض "جاري القراءة..." في: "#output"
+</pre>
+</div>
+<div class="file">
+<h2>📄 files_full.byan</h2>
+<h3>التعليقات:</h3><ul>
+<li>4facfe, #00f2fe);</li>
+<li>4facfe;</li>
+<li>output {</li>
+<li>output"</li>
+<li>output"</li>
+<li>output"</li>
+</ul>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: اختبار الملفات الكامل
+    أنظمة_التشغيل: "الكل"
+
+الكود:
+    أنشئ_ملفًا:
+        الاسم: "index.html"
+        المسار: "./"
+        المحتوى:
+            """
+            &lt;!DOCTYPE html>
+            &lt;html lang="ar" dir="rtl">
+            &lt;head>
+                &lt;meta charset="UTF-8">
+                &lt;title>الملفات الكامل&lt;/title>
+                &lt;link rel="stylesheet" href="style.css">
+            &lt;/head>
+            &lt;body>
+                &lt;h1>اختبار الملفات الكامل&lt;/h1>
+                &lt;button id="write">اكتب ملف&lt;/button>
+                &lt;button id="read">اقرأ الملف&lt;/button>
+                &lt;button id="exec">نفّذ أمر&lt;/button>
+                &lt;p id="output">استنى الضغط...&lt;/p>
+            &lt;/body>
+            &lt;/html>
+            """
+
+    أنشئ_ملفًا:
+        الاسم: "style.css"
+        المسار: "./"
+        المحتوى:
+            """
+            body {
+                font-family: 'Cairo', sans-serif;
+                background: linear-gradient(135deg, #4facfe, #00f2fe);
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                margin: 0;
+            }
+            h1 { font-size: 26px; }
+            button {
+                padding: 12px 30px;
+                font-size: 16px;
+                border-radius: 10px;
+                border: none;
+                cursor: pointer;
+                background: white;
+                color: #4facfe;
+                font-weight: bold;
+                margin: 5px;
+            }
+            #output {
+                font-size: 18px;
+                margin-top: 20px;
+                max-width: 600px;
+                text-align: center;
+                background: rgba(255,255,255,0.2);
+                padding: 15px;
+                border-radius: 10px;
+            }
+            """
+
+    أنشئ_ملفًا:
+        الاسم: "script.js"
+        المسار: "./"
+        المحتوى:
+            """
+            // فارغ
+            """
+
+    أنشئ زر:
+        المعرف: "write"
+        النص: "اكتب ملف"
+        عند_الضغط:
+            اكتب "notes.txt" فيه "مرحبا من بيان"
+            اعرض "تم الكتابة ✅" في: "#output"
+
+    أنشئ زر:
+        المعرف: "read"
+        النص: "اقرأ الملف"
+        عند_الضغط:
+            اعرض "جاري القراءة..." في: "#output"
+
+    أنشئ زر:
+        المعرف: "exec"
+        النص: "نفّذ أمر"
+        عند_الضغط:
+            نفّذ "ls /storage/emulated/0/byan/build"
+            اعرض "تم التنفيذ - شوف console" في: "#output"
+</pre>
+</div>
+<div class="file">
+<h2>📄 files_advanced.byan</h2>
+<h3>التعليقات:</h3><ul>
+<li>667eea, #764ba2);</li>
+<li>667eea;</li>
+<li>output {</li>
+<li>output"</li>
+<li>output"</li>
+<li>output"</li>
+<li>output"</li>
+<li>output"</li>
+<li>output"</li>
+</ul>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: اختبار الملفات المتقدم
+    أنظمة_التشغيل: "الكل"
+
+الكود:
+    أنشئ_ملفًا:
+        الاسم: "index.html"
+        المسار: "./"
+        المحتوى:
+            """
+            &lt;!DOCTYPE html>
+            &lt;html lang="ar" dir="rtl">
+            &lt;head>
+                &lt;meta charset="UTF-8">
+                &lt;title>الملفات المتقدم&lt;/title>
+                &lt;link rel="stylesheet" href="style.css">
+            &lt;/head>
+            &lt;body>
+                &lt;h1>اختبار الملفات المتقدم&lt;/h1>
+                &lt;div class="buttons">
+                    &lt;button id="write">اكتب&lt;/button>
+                    &lt;button id="read">اقرأ&lt;/button>
+                    &lt;button id="copy">انسخ&lt;/button>
+                    &lt;button id="move">انقل&lt;/button>
+                    &lt;button id="delete">احذف&lt;/button>
+                    &lt;button id="list">قائمة الملفات&lt;/button>
+                &lt;/div>
+                &lt;p id="output" class="byan-output">استنى الضغط...&lt;/p>
+            &lt;/body>
+            &lt;/html>
+            """
+
+    أنشئ_ملفًا:
+        الاسم: "style.css"
+        المسار: "./"
+        المحتوى:
+            """
+            body {
+                font-family: 'Cairo', sans-serif;
+                background: linear-gradient(135deg, #667eea, #764ba2);
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                margin: 0;
+                padding: 20px;
+            }
+            h1 { font-size: 26px; margin-bottom: 20px; }
+            .buttons { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+            button {
+                padding: 12px 22px;
+                font-size: 15px;
+                border-radius: 10px;
+                border: none;
+                cursor: pointer;
+                background: white;
+                color: #667eea;
+                font-weight: bold;
+                transition: transform 0.2s;
+            }
+            button:hover { transform: scale(1.05); }
+            #output {
+                font-size: 16px;
+                margin-top: 25px;
+                max-width: 700px;
+                min-height: 60px;
+                text-align: right;
+                background: rgba(255,255,255,0.15);
+                padding: 20px;
+                border-radius: 12px;
+                white-space: pre-wrap;
+                font-family: 'Courier New', monospace;
+            }
+            """
+
+    أنشئ_ملفًا:
+        الاسم: "script.js"
+        المسار: "./"
+        المحتوى:
+            """
+            // فارغ
+            """
+
+    أنشئ زر:
+        المعرف: "write"
+        النص: "اكتب"
+        عند_الضغط:
+            اكتب "test.txt" فيه "هذا نص تجريبي"
+            اعرض "✅ تم الكتابة" في: "#output"
+
+    أنشئ زر:
+        المعرف: "read"
+        النص: "اقرأ"
+        عند_الضغط:
+            اقرأ "test.txt" في: "#output"
+
+    أنشئ زر:
+        المعرف: "copy"
+        النص: "انسخ"
+        عند_الضغط:
+            انسخ "test.txt" إلى "backup_test.txt"
+            اعرض "✅ تم النسخ" في: "#output"
+
+    أنشئ زر:
+        المعرف: "move"
+        النص: "انقل"
+        عند_الضغط:
+            انقل "backup_test.txt" إلى "moved_test.txt"
+            اعرض "✅ تم النقل" في: "#output"
+
+    أنشئ زر:
+        المعرف: "delete"
+        النص: "احذف"
+        عند_الضغط:
+            احذف "moved_test.txt"
+            اعرض "✅ تم الحذف" في: "#output"
+
+    أنشئ زر:
+        المعرف: "list"
+        النص: "قائمة الملفات"
+        عند_الضغط:
+            نفّذ "ls /storage/emulated/0/byan/build"
+            اعرض "تم عرض الملفات - شوف Console" في: "#output"
+</pre>
+</div>
+<div class="file">
+<h2>📄 visual_test.byan</h2>
+<h3>التعليقات:</h3><ul>
+<li>msg"</li>
+</ul>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: اختبار الوصف
+    أنظمة_التشغيل: "الكل"
+
+الكود:
+    انشئ نافذة:
+        العنوان: مرحبا ببيان
+        لون_الخلفية: بنفسجي
+
+    انشئ عنوانا:
+        المعرف: "title"
+        النص: مرحبا بك في لغة بيان
+        الحجم: 32
+        اللون: أبيض
+
+    انشئ نصا:
+        المعرف: "msg"
+        النص: اضغط الزر عشان تشوف السحر
+        الحجم: 16
+
+    انشئ زر:
+        المعرف: "btn"
+        النص: "اضغطني"
+        اللون: أخضر
+        عند_الضغط:
+            اعرض "أهلاً بالعالم من بيان 🎉" في: "#msg"
+</pre>
+</div>
+<div class="file">
+<h2>📄 test.byan</h2>
+<h3>الكود:</h3><pre>انشئ زر:
+    ...
+</pre>
+</div>
+<div class="file">
+<h2>📄 full_test.byan</h2>
+<h3>التعليقات:</h3><ul>
+<li>output"</li>
+<li>output"</li>
+<li>output"</li>
+<li>output"</li>
+</ul>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: اختبار كامل
+
+الكود:
+    انشئ نافذة:
+        العنوان: اختبار كل الميزات
+        لون_الخلفية: أزرق
+
+    انشئ عنوانا:
+        النص: اختبار شامل
+        الحجم: 24
+
+    انشئ زر:
+        المعرف: "test1"
+        النص: "اختبر AND و OR"
+        عند_الضغط:
+            متغير س = 5
+            متغير ص = 10
+            لو س &lt; ص و س > 0:
+                اعرض "الشرطين صح ✅" في: "#output"
+            وإلا:
+                اعرض "شرط غلط ❌" في: "#output"
+
+    انشئ زر:
+        المعرف: "test2"
+        النص: "اختبر القسمة"
+        عند_الضغط:
+            متغير أ = 20
+            متغير ب = 4
+            اعرض أ / ب في: "#output"
+
+    انشئ زر:
+        المعرف: "test3"
+        النص: "اختبر الطول"
+        عند_الضغط:
+            متغير أرقام = [1, 2, 3, 4, 5]
+            اعرض طول(أرقام) في: "#output"
+
+    انشئ نصا:
+        المعرف: "output"
+        النص: "النتيجة هنا"
+</pre>
+</div>
+<div class="file">
+<h2>📄 missing_test.byan</h2>
+<h3>التعليقات:</h3><ul>
+<li>out"</li>
+<li>out"</li>
+<li>out"</li>
+<li>out"</li>
+<li>out"</li>
+<li>out"</li>
+<li>out"</li>
+</ul>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: اختبار النواقص
+
+الكود:
+    انشئ نافذة:
+        العنوان: اختبار النواقص
+        لون_الخلفية: أزرق
+
+    انشئ عنوانا:
+        النص: اختبار الميزات الجديدة
+        الحجم: 22
+
+    انشئ زر:
+        المعرف: "b1"
+        النص: "اختبر توقف"
+        عند_الضغط:
+            لكل رقم في [1, 2, 3, 4, 5]:
+                لو رقم == 3:
+                    توقف
+                اعرض رقم في: "#out"
+
+    انشئ زر:
+        المعرف: "b2"
+        النص: "اختبر استمر"
+        عند_الضغط:
+            لكل رقم في [1, 2, 3, 4, 5]:
+                لو رقم == 3:
+                    استمر
+                اعرض رقم في: "#out"
+
+    انشئ زر:
+        المعرف: "b3"
+        النص: "اختبر وإلا لو"
+        عند_الضغط:
+            متغير درجة = 75
+            لو درجة >= 90:
+                اعرض "ممتاز" في: "#out"
+            وإلا لو درجة >= 75:
+                اعرض "جيد جدًا" في: "#out"
+            وإلا لو درجة >= 50:
+                اعرض "مقبول" في: "#out"
+            وإلا:
+                اعرض "راسب" في: "#out"
+
+    انشئ زر:
+        المعرف: "b4"
+        النص: "اختبر مصفوفة 2D"
+        عند_الضغط:
+            متغير مصفوفة = [[1, 2], [3, 4], [5, 6]]
+            اعرض مصفوفة[0][1] في: "#out"
+
+    انشئ نصا:
+        المعرف: "out"
+        النص: "النتيجة"
+</pre>
+</div>
+<div class="file">
+<h2>📄 mega_test.byan</h2>
+<h3>التعليقات:</h3><ul>
+<li>out"</li>
+<li>out"</li>
+</ul>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: اختبار كل الميزات
+
+الكود:
+    انشئ نافذة:
+        العنوان: اختبار شامل
+        لون_الخلفية: بنفسجي
+
+    انشئ عنوانا:
+        النص: اختبار كل الميزات
+        الحجم: 24
+        اللون: أبيض
+
+    انشئ صورة:
+        المعرف: "img1"
+        المسار: "https://via.placeholder.com/200"
+        العرض: 200
+
+    انشئ قائمة_منسدلة:
+        المعرف: "colors"
+        خيار: "أحمر"
+        خيار: "أخضر"
+        خيار: "أزرق"
+
+    انشئ زر:
+        المعرف: "b1"
+        النص: "اختبر أضف"
+        اللون: أخضر
+        عند_الضغط:
+            متغير أرقام = [1, 2, 3]
+            أضف(أرقام, 4)
+            أضف(أرقام, 5)
+            اعرض طول(أرقام) في: "#out"
+
+    انشئ زر:
+        المعرف: "b2"
+        النص: "اختبر احذف"
+        اللون: أحمر
+        عند_الضغط:
+            متغير أرقام = [10, 20, 30, 40]
+            احذف_عنصر(أرقام, 1)
+            اعرض أرقام[0] في: "#out"
+
+    انشئ نصا:
+        المعرف: "out"
+        النص: "النتيجة هتظهر هنا"
+        الحجم: 20
+</pre>
+</div>
+<div class="file">
+<h2>📄 select_test.byan</h2>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: اختبار القائمة
+
+الكود:
+    انشئ نافذة:
+        العنوان: القائمة
+        لون_الخلفية: أزرق
+
+    انشئ قائمة_منسدلة:
+        المعرف: "city"
+        خيار: "القاهرة"
+        خيار: "الإسكندرية"
+        خيار: "أسوان"
+
+    انشئ نصا:
+        المعرف: "out"
+        النص: "اختار مدينة"
+</pre>
+</div>
+<div class="file">
+<h2>📄 super_test.byan</h2>
+<h3>التعليقات:</h3><ul>
+<li>out"</li>
+<li>out"</li>
+<li>out"</li>
+<li>out" إلى (100, 50) في: 1 ثانية</li>
+<li>container"</li>
+<li>out"</li>
+</ul>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: الاختبار الشامل
+
+الكود:
+    انشئ نافذة:
+        العنوان: الاختبار الشامل
+        لون_الخلفية: بنفسجي
+
+    انشئ عنوانا:
+        النص: الاختبار الشامل
+        الحجم: 24
+        اللون: أبيض
+
+    انشئ زر:
+        المعرف: "b1"
+        النص: "قاعدة بيانات"
+        اللون: أخضر
+        عند_الضغط:
+            اضف_سجل "users" فيه {name: "احمد", age: 25}
+            اقرأ_سجلات "users" في: "#out"
+
+    انشئ زر:
+        المعرف: "b2"
+        النص: "مؤقت"
+        اللون: برتقالي
+        عند_الضغط:
+            اعرض "بدأ المؤقت" في: "#out"
+            كل 2 ثانية:
+                اعرض "تكة" في: "#out"
+
+    انشئ زر:
+        المعرف: "b3"
+        النص: "حركة"
+        اللون: وردي
+        عند_الضغط:
+            حرّك "#out" إلى (100, 50) في: 1 ثانية
+
+    انشئ زر:
+        المعرف: "b4"
+        النص: "أضف عنصر"
+        اللون: أزرق
+        عند_الضغط:
+            ضيف_عنصر "p" في "#container"
+            اعرض "تم إضافة عنصر" في: "#out"
+
+    انشئ نصا:
+        المعرف: "out"
+        النص: "النتيجة هنا"
+        الحجم: 20
+</pre>
+</div>
+<div class="file">
+<h2>📄 db_test.byan</h2>
+<h3>التعليقات:</h3><ul>
+<li>out"</li>
+</ul>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: اختبار قاعدة البيانات
+
+الكود:
+    انشئ نافذة:
+        العنوان: قاعدة البيانات
+        لون_الخلفية: أزرق
+
+    انشئ عنوانا:
+        النص: اختبار قاعدة البيانات
+        الحجم: 24
+        اللون: أسود
+
+    انشئ زر:
+        المعرف: "create_table"
+        النص: "أضف سجل جديد"
+        اللون: أخضر
+        عند_الضغط:
+            اضف_سجل "users" فيه {name: "احمد", age: 25}
+            اقرأ_سجلات "users" في: "#out"
+
+    انشئ نصا:
+        المعرف: "out"
+        النص: "النتيجة هتظهر هنا"
+        الحجم: 20
+        اللون: أسود
+</pre>
+</div>
+<div class="file">
+<h2>📄 mega_v2_test.byan</h2>
+<h3>التعليقات:</h3><ul>
+<li>out"</li>
+<li>out"</li>
+<li>out"</li>
+<li>out"</li>
+<li>out"</li>
+<li>out"</li>
+</ul>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: الاختبار الشامل V2
+
+الكود:
+    انشئ نافذة:
+        العنوان: الاختبار V2
+        لون_الخلفية: بنفسجي
+
+    انشئ عنوانا:
+        النص: الاختبار الشامل V2
+        الحجم: 24
+        اللون: أسود
+
+    انشئ نصا:
+        المعرف: "out"
+        النص: "النتيجة هتظهر هنا"
+        الحجم: 20
+        اللون: أسود
+
+    انشئ زر:
+        المعرف: "b1"
+        النص: "دمج النصوص"
+        اللون: أخضر
+        عند_الضغط:
+            متغير اسم = "احمد"
+            متغير عمر = 25
+            اعرض "أهلاً يا {اسم} عمرك {عمر} سنة" في: "#out"
+
+    انشئ زر:
+        المعرف: "b2"
+        النص: "دوال المصفوفات"
+        اللون: برتقالي
+        عند_الضغط:
+            متغير ارقام = [3, 1, 4, 2, 5]
+            اعرض رتب(ارقام) في: "#out"
+
+    انشئ زر:
+        المعرف: "b3"
+        النص: "تحويلات"
+        اللون: أزرق
+        عند_الضغط:
+            متغير رقم_نص = "42"
+            متغير الرقم = رقم(رقم_نص)
+            اعرض الرقم + 8 في: "#out"
+
+    انشئ زر:
+        المعرف: "b4"
+        النص: "حاول لو_فشل"
+        اللون: أحمر
+        عند_الضغط:
+            حاول:
+                اقرأ "غير_موجود.txt" في: "#out"
+            لو_فشل:
+                اعرض "الملف مش موجود!" في: "#out"
+
+    انشئ زر:
+        المعرف: "b5"
+        النص: "انتظر + DB"
+        اللون: بنفسجي
+        عند_الضغط:
+            انتظر:
+                اضف_سجل "test" فيه {name: "محمد"}
+                اقرأ_سجلات "test" في: "#out"
+</pre>
+</div>
+<div class="file">
+<h2>📄 test_for_index.byan</h2>
+<h3>التعليقات:</h3><ul>
+<li>out"</li>
+</ul>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: "اختبار فهرس"
+
+الكود:
+    انشئ نافذة:
+        العنوان: "اختبار"
+        لون_الخلفية: بنفسجي
+
+    انشئ عنوانا:
+        النص: "اختبار لكل_بفهرس"
+        الحجم: 24
+        اللون: أسود
+
+    انشئ زر:
+        المعرف: "btn"
+        النص: "اضغط"
+        اللون: أخضر
+        عند_الضغط:
+            متغير اسامي = ["احمد", "محمد", "علي"]
+            لكل_بفهرس i, اسم في اسامي:
+                اعرض "{i}: {اسم}" في: "#out"
+
+    انشئ نصا:
+        المعرف: "out"
+        النص: "النتيجة"
+        الحجم: 18
+        اللون: أسود
+</pre>
+</div>
+<div class="file">
+<h2>📄 test_qr.byan</h2>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: "اختبار QR"
+
+الكود:
+    انشئ نافذة:
+        العنوان: "QR Code"
+        لون_الخلفية: أزرق
+
+    انشئ عنوانا:
+        النص: "اختبار QR Code"
+        الحجم: 24
+        اللون: أسود
+
+    انشئ زر:
+        المعرف: "btn"
+        النص: "أنشئ QR"
+        اللون: أخضر
+        عند_الضغط:
+            qr "https://github.com"
+
+    انشئ نصا:
+        المعرف: "out"
+        النص: "النتيجة"
+        الحجم: 18
+        اللون: أسود
+</pre>
+</div>
+<div class="file">
+<h2>📄 test_pdf.byan</h2>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: "اختبار PDF"
+
+الكود:
+    انشئ نافذة:
+        العنوان: "PDF"
+        لون_الخلفية: أحمر
+
+    انشئ عنوانا:
+        النص: "اختبار PDF"
+        الحجم: 24
+        اللون: أسود
+
+    انشئ زر:
+        المعرف: "btn"
+        النص: "أنشئ PDF"
+        اللون: أخضر
+        عند_الضغط:
+            ملف_PDF:
+                العنوان: "تقرير بيان"
+                الاسم: "report.pdf"
+</pre>
+</div>
+<div class="file">
+<h2>📄 test_auth.byan</h2>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: "اختبار Auth"
+
+الكود:
+    انشئ نافذة:
+        العنوان: "Auth"
+        لون_الخلفية: أخضر
+
+    انشئ عنوانا:
+        النص: "اختبار المصادقة"
+        الحجم: 24
+        اللون: أسود
+
+    انشئ زر:
+        المعرف: "login"
+        النص: "تسجيل دخول"
+        اللون: أخضر
+        عند_الضغط:
+            تسجيل_دخول "احمد" "123456"
+
+    انشئ زر:
+        المعرف: "logout"
+        النص: "تسجيل خروج"
+        اللون: أحمر
+        عند_الضغط:
+            تسجيل_خروج
+
+    انشئ زر:
+        المعرف: "register"
+        النص: "حساب جديد"
+        اللون: أزرق
+        عند_الضغط:
+            حساب_جديد "محمد" "abcdef"
+</pre>
+</div>
+<div class="file">
+<h2>📄 test_ws.byan</h2>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: "اختبار WebSocket"
+
+الكود:
+    انشئ نافذة:
+        العنوان: "WebSocket"
+        لون_الخلفية: بنفسجي
+
+    انشئ عنوانا:
+        النص: "اختبار WebSocket"
+        الحجم: 24
+        اللون: أسود
+
+    انشئ زر:
+        المعرف: "ws_btn"
+        النص: "اتصل"
+        اللون: أخضر
+        عند_الضغط:
+            اتصال_مباشر "wss://echo.websocket.events"
+</pre>
+</div>
+<div class="file">
+<h2>📄 test_map.byan</h2>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: "اختبار الخريطة"
+
+الكود:
+    انشئ نافذة:
+        العنوان: "Map"
+        لون_الخلفية: أزرق
+
+    انشئ عنوانا:
+        النص: "اختبار الخريطة"
+        الحجم: 24
+        اللون: أسود
+
+    انشئ زر:
+        المعرف: "btn"
+        النص: "اعرض الخريطة"
+        اللون: أخضر
+        عند_الضغط:
+            انشئ خريطة:
+                الموقع: 30.0444
+                العرض: 31.2357
+                التكبير: 12
+</pre>
+</div>
+<div class="file">
+<h2>📄 test_chart.byan</h2>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: "اختبار الرسم البياني"
+
+الكود:
+    انشئ نافذة:
+        العنوان: "Chart"
+        لون_الخلفية: بنفسجي
+
+    انشئ عنوانا:
+        النص: "اختبار الرسم البياني"
+        الحجم: 24
+        اللون: أسود
+
+    انشئ زر:
+        المعرف: "btn"
+        النص: "اعرض الرسم"
+        اللون: أخضر
+        عند_الضغط:
+            انشئ رسم_بياني:
+                النوع: bar
+</pre>
+</div>
+<div class="file">
+<h2>📄 test_lambda.byan</h2>
+<h3>التعليقات:</h3><ul>
+<li>out"</li>
+</ul>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: "اختبار Lambda"
+
+الكود:
+    انشئ نافذة:
+        العنوان: "Lambda"
+        لون_الخلفية: أزرق
+
+    انشئ عنوانا:
+        النص: "اختبار الدوال المجهولة"
+        الحجم: 24
+        اللون: أسود
+
+    انشئ نصا:
+        المعرف: "out"
+        النص: "النتيجة"
+        الحجم: 18
+        اللون: أسود
+
+    انشئ زر:
+        المعرف: "btn"
+        النص: "اختبر"
+        اللون: أخضر
+        عند_الضغط:
+            متغير مضاعف = (س) => س * 2
+            متغير مجموع = (أ, ب) => أ + ب
+            اعرض "مضاعف 5 = {مضاعف(5)}" في: "#out"
+</pre>
+</div>
+<div class="file">
+<h2>📄 utils.byan</h2>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: "utils"
+
+الكود:
+    دالة جمع(أ, ب):
+        ارجع أ + ب
+    
+    دالة ضرب(أ, ب):
+        ارجع أ * ب
+</pre>
+</div>
+<div class="file">
+<h2>📄 test_import.byan</h2>
+<h3>التعليقات:</h3><ul>
+<li>out"</li>
+</ul>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: "اختبار الاستيراد"
+
+الكود:
+    استورد "utils.byan"
+
+    انشئ نافذة:
+        العنوان: "Import"
+        لون_الخلفية: أزرق
+
+    انشئ عنوانا:
+        النص: "اختبار الاستيراد"
+        الحجم: 24
+        اللون: أسود
+
+    انشئ زر:
+        المعرف: "btn"
+        النص: "اختبر"
+        اللون: أخضر
+        عند_الضغط:
+            متغير ن = جمع(5, 3)
+            اعرض "5 + 3 = {ن}" في: "#out"
+
+    انشئ نصا:
+        المعرف: "out"
+        النص: "النتيجة"
+        الحجم: 18
+        اللون: أسود
+</pre>
+</div>
+<div class="file">
+<h2>📄 test_nested.byan</h2>
+<h3>التعليقات:</h3><ul>
+<li>out"</li>
+</ul>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: "اختبار المصفوفات المتداخلة"
+
+الكود:
+    انشئ نافذة:
+        العنوان: "Nested"
+        لون_الخلفية: بنفسجي
+
+    انشئ عنوانا:
+        النص: "اختبار المصفوفات"
+        الحجم: 24
+        اللون: أسود
+
+    انشئ زر:
+        المعرف: "btn"
+        النص: "اختبر"
+        اللون: أخضر
+        عند_الضغط:
+            متغير م = [[1, 2], [3, 4], [5, 6]]
+            اعرض م[0][1] في: "#out"
+
+    انشئ نصا:
+        المعرف: "out"
+        النص: "النتيجة"
+        الحجم: 18
+        اللون: أسود
+</pre>
+</div>
+<div class="file">
+<h2>📄 test_icon.byan</h2>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: "اختبار الأيقونات"
+
+الكود:
+    انشئ نافذة:
+        العنوان: "Icons"
+        لون_الخلفية: أزرق
+
+    انشئ عنوانا:
+        النص: "اختبار الأيقونات"
+        الحجم: 24
+        اللون: أسود
+
+    انشئ أيقونة:
+        النوع: home
+        الحجم: 48
+        اللون: أخضر
+
+    انشئ أيقونة:
+        النوع: star
+        الحجم: 48
+        اللون: أصفر
+</pre>
+</div>
+<div class="file">
+<h2>📄 test_form.byan</h2>
+<h3>التعليقات:</h3><ul>
+<li>out"</li>
+</ul>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: "اختبار النماذج"
+
+الكود:
+    انشئ نافذة:
+        العنوان: "Forms"
+        لون_الخلفية: أزرق
+
+    انشئ عنوانا:
+        النص: "اختبار النماذج"
+        الحجم: 24
+        اللون: أسود
+
+    انشئ نموذج:
+        المعرف: "login"
+        الحقول:
+            - اسم_المستخدم: نص
+            - كلمة_السر: كلمة_سر
+        عند_الإرسال:
+            اعرض "تم الإرسال!" في: "#out"
+
+    انشئ نصا:
+        المعرف: "out"
+        النص: "النتيجة"
+        الحجم: 18
+        اللون: أسود
+</pre>
+</div>
+<div class="file">
+<h2>📄 test_grid.byan</h2>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: "اختبار الشبكات"
+
+الكود:
+    انشئ نافذة:
+        العنوان: "Grid"
+        لون_الخلفية: أزرق
+
+    انشئ عنوانا:
+        النص: "اختبار الشبكات"
+        الحجم: 24
+        اللون: أسود
+
+    انشئ شبكة:
+        المعرف: "grid1"
+        الأعمدة: 3
+        العناصر:
+            - أيقونة: home
+            - أيقونة: star
+            - أيقونة: heart
+            - أيقونة: user
+            - أيقونة: settings
+            - أيقونة: search
+</pre>
+</div>
+<div class="file">
+<h2>📄 test_tabs.byan</h2>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: "اختبار التبويبات"
+
+الكود:
+    انشئ نافذة:
+        العنوان: "Tabs"
+        لون_الخلفية: بنفسجي
+
+    انشئ عنوانا:
+        النص: "اختبار التبويبات"
+        الحجم: 24
+        اللون: أسود
+
+    انشئ تبويبات:
+        المعرف: "main_tabs"
+        التبويبات:
+            - الرئيسية
+            - الإعدادات
+            - حول
+</pre>
+</div>
+<div class="file">
+<h2>📄 test_table.byan</h2>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: "اختبار الجداول"
+
+الكود:
+    انشئ نافذة:
+        العنوان: "Tables"
+        لون_الخلفية: أزرق
+
+    انشئ عنوانا:
+        النص: "اختبار الجداول"
+        الحجم: 24
+        اللون: أسود
+
+    انشئ جدول:
+        المعرف: "users"
+        الأعمدة:
+            - الاسم
+            - العمر
+            - المدينة
+        البيانات:
+            - احمد 25 القاهرة
+            - محمد 30 الإسكندرية
+            - علي 28 أسوان
+</pre>
+</div>
+<div class="file">
+<h2>📄 test_batch2.byan</h2>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: "اختبار الدفعة 2"
+
+الكود:
+    انشئ نافذة:
+        العنوان: "Batch 2"
+        لون_الخلفية: أزرق
+
+    انشئ عنوانا:
+        النص: "اختبار الدفعة التانية"
+        الحجم: 24
+        اللون: أسود
+
+    انشئ زر:
+        المعرف: "sound_btn"
+        النص: "🔊 صوت"
+        اللون: أخضر
+        عند_الضغط:
+            شغل_صوت "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+
+    انشئ زر:
+        المعرف: "notify_btn"
+        النص: "🔔 إشعار"
+        اللون: برتقالي
+        عند_الضغط:
+            أظهر_إشعار "مرحبا" "أهلاً بك في بيان"
+
+    انشئ زر:
+        المعرف: "copy_btn"
+        النص: "📋 انسخ"
+        اللون: بنفسجي
+        عند_الضغط:
+            انسخ_للحافظة "نص تجريبي من بيان"
+
+    انشئ زر:
+        المعرف: "paste_btn"
+        النص: "📋 الصق"
+        اللون: أزرق
+        عند_الضغط:
+            الصق
+
+    انشئ زر:
+        المعرف: "download_btn"
+        النص: "⬇️ حمل"
+        اللون: أحمر
+        عند_الضغط:
+            حمل "https://example.com/file.pdf" "test.pdf"
+</pre>
+</div>
+<div class="file">
+<h2>📄 test_batch3.byan</h2>
+<h3>التعليقات:</h3><ul>
+<li>box"</li>
+<li>panel"</li>
+</ul>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: "اختبار الدفعة 3"
+
+الكود:
+    وضع_ليلي: تلقائي
+    اللغة: عربي
+
+    انشئ نافذة:
+        العنوان: "Batch 3"
+        لون_الخلفية: أزرق
+
+    انشئ عنوانا:
+        النص: "اختبار الدفعة التالتة"
+        الحجم: 24
+        اللون: أسود
+
+    انشئ نصا:
+        المعرف: "box"
+        النص: "عنصر قابل للسحب"
+        الحجم: 18
+
+    انشئ نصا:
+        المعرف: "panel"
+        النص: "عنصر قابل للتحجيم"
+        الحجم: 18
+
+    انشئ زر:
+        المعرف: "drag_btn"
+        النص: "تفعيل السحب"
+        اللون: أخضر
+        عند_الضغط:
+            فعّل_سحب "#box"
+
+    انشئ زر:
+        المعرف: "resize_btn"
+        النص: "تفعيل التحجيم"
+        اللون: بنفسجي
+        عند_الضغط:
+            فعّل_تحجيم "#panel"
+
+    انشئ زر:
+        المعرف: "login_btn"
+        النص: "دخول آمن"
+        اللون: أحمر
+        عند_الضغط:
+            تسجيل_دخول_آمن "احمد" "123456"
+</pre>
+</div>
+<div class="file">
+<h2>📄 test_batch4.byan</h2>
+<h3>التعليقات:</h3><ul>
+<li>container"</li>
+</ul>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: "اختبار الدفعة 4"
+
+الكود:
+    انشئ نافذة:
+        العنوان: "Batch 4"
+        لون_الخلفية: بنفسجي
+
+    انشئ عنوانا:
+        النص: "اختبار الدفعة الرابعة"
+        الحجم: 24
+        اللون: أسود
+
+    انشئ زر:
+        المعرف: "video_btn"
+        النص: "📹 اتصال فيديو"
+        اللون: أخضر
+        عند_الضغط:
+            اتصال_فيديو "room_1"
+
+    انشئ زر:
+        المعرف: "push_btn"
+        النص: "🔔 إشعارات push"
+        اللون: برتقالي
+        عند_الضغط:
+            اطلب_إشعارات_push
+
+    انشئ نصا:
+        المعرف: "container"
+        النص: "محتوى"
+        الحجم: 16
+
+    انشئ زر:
+        المعرف: "template_btn"
+        النص: "تطبيق قالب"
+        اللون: بنفسجي
+        عند_الضغط:
+            طبق_قالب "chat" في: "#container"
+</pre>
+</div>
+<div class="file">
+<h2>📄 test_batch5.byan</h2>
+<h3>التعليقات:</h3><ul>
+<li>out"</li>
+</ul>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: "اختبار الدفعة 5"
+
+الكود:
+    انشئ نافذة:
+        العنوان: "Batch 5"
+        لون_الخلفية: أزرق داكن
+
+    انشئ عنوانا:
+        النص: "اختبار الدفعة الخامسة"
+        الحجم: 24
+        اللون: أبيض
+
+    انشئ نصا:
+        المعرف: "out"
+        النص: "النتيجة"
+        الحجم: 16
+        اللون: أبيض
+
+    انشئ زر:
+        المعرف: "ai_btn"
+        النص: "🤖 AI محلي"
+        اللون: أخضر
+        عند_الضغط:
+            اسأل_ai_محلي "ما هي عاصمة مصر؟" في: "#out"
+
+    انشئ زر:
+        المعرف: "wallet_btn"
+        النص: "💰 اتصال محفظة"
+        اللون: برتقالي
+        عند_الضغط:
+            اتصال_محفظة "ethereum"
+
+    انشئ زر:
+        المعرف: "3d_btn"
+        النص: "🎮 مشهد 3D"
+        اللون: بنفسجي
+        عند_الضغط:
+            انشئ_مشهد_3d:
+                المعرف: "my_scene"
+
+    انشئ زر:
+        المعرف: "ar_btn"
+        النص: "🥽 AR"
+        اللون: أزرق
+        عند_الضغط:
+            انشئ_ar:
+                المعرف: "my_ar"
+</pre>
+</div>
+<div class="file">
+<h2>📄 test_batch6.byan</h2>
+<h3>التعليقات:</h3><ul>
+<li>out"</li>
+<li>out"</li>
+<li>out"</li>
+</ul>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: "اختبار الدفعة 6"
+
+الكود:
+    انشئ نافذة:
+        العنوان: "Batch 6"
+        لون_الخلفية: بنفسجي
+
+    انشئ عنوانا:
+        النص: "اختبار الدفعة السادسة"
+        الحجم: 24
+        اللون: أسود
+
+    صنف شخص:
+        دالة تحدث:
+            ارجع "أنا شخص"
+
+    انشئ زر:
+        المعرف: "class_btn"
+        النص: "🏛️ صنف"
+        اللون: أخضر
+        عند_الضغط:
+            غير_متزامن دالة تحميل:
+                اعرض "تم التحميل" في: "#out"
+
+    انشئ زر:
+        المعرف: "match_btn"
+        النص: "🎯 Pattern"
+        اللون: برتقالي
+        عند_الضغط:
+            طابق "احمد" مع:
+                حالة "احمد":
+                    اعرض "أهلاً احمد" في: "#out"
+                حالة "محمد":
+                    اعرض "أهلاً محمد" في: "#out"
+
+    انشئ نصا:
+        المعرف: "out"
+        النص: "النتيجة"
+        الحجم: 16
+        اللون: أسود
+</pre>
+</div>
+<div class="file">
+<h2>📄 test_43_47.byan</h2>
+<h3>التعليقات:</h3><ul>
+<li>out"</li>
+</ul>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: "اختبار 43-47"
+
+الكود:
+    انشئ نافذة:
+        العنوان: "Test"
+        لون_الخلفية: أزرق
+
+    انشئ عنوانا:
+        النص: "اختبار 43-47"
+        الحجم: 24
+        اللون: أسود
+
+    انشئ زر:
+        المعرف: "btn"
+        النص: "اختبر"
+        اللون: أخضر
+        عند_الضغط:
+            ثابت PI = 3.14
+            متغير س = لا_شيء
+            متغير ن = س || 10
+            اعرض "PI={PI}, ن={ن}" في: "#out"
+
+    انشئ نصا:
+        المعرف: "out"
+        النص: "النتيجة"
+        الحجم: 16
+        اللون: أسود
+</pre>
+</div>
+<div class="file">
+<h2>📄 test_date.byan</h2>
+<h3>التعليقات:</h3><ul>
+<li>out"</li>
+</ul>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: "اختبار التاريخ"
+
+الكود:
+    انشئ نافذة:
+        العنوان: "Date Test"
+        لون_الخلفية: أزرق
+
+    انشئ عنوانا:
+        النص: "التاريخ والوقت"
+        الحجم: 24
+        اللون: أسود
+
+    انشئ زر:
+        المعرف: "btn"
+        النص: "اعرض التاريخ"
+        اللون: أخضر
+        عند_الضغط:
+            اعرض "الآن: {الآن()}" في: "#out"
+
+    انشئ نصا:
+        المعرف: "out"
+        النص: "النتيجة"
+        الحجم: 16
+        اللون: أسود
+</pre>
+</div>
+<div class="file">
+<h2>📄 test_math.byan</h2>
+<h3>التعليقات:</h3><ul>
+<li>out"</li>
+<li>out"</li>
+</ul>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: "اختبار Math"
+
+الكود:
+    انشئ نافذة:
+        العنوان: "Math"
+        لون_الخلفية: أزرق
+
+    انشئ عنوانا:
+        النص: "دوال الرياضيات"
+        الحجم: 24
+        اللون: أسود
+
+    انشئ زر:
+        المعرف: "btn"
+        النص: "احسب"
+        اللون: أخضر
+        عند_الضغط:
+            اعرض "جذر 16 = {جذر(16)}" في: "#out"
+            اعرض "قوة 2^8 = {قوة(2, 8)}" في: "#out"
+
+    انشئ نصا:
+        المعرف: "out"
+        النص: "النتيجة"
+        الحجم: 16
+        اللون: أسود
+</pre>
+</div>
+<div class="file">
+<h2>📄 test_string.byan</h2>
+<h3>التعليقات:</h3><ul>
+<li>out"</li>
+</ul>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: "اختبار String"
+
+الكود:
+    انشئ نافذة:
+        العنوان: "String"
+        لون_الخلفية: بنفسجي
+
+    انشئ عنوانا:
+        النص: "دوال النصوص"
+        الحجم: 24
+        اللون: أسود
+
+    انشئ زر:
+        المعرف: "btn"
+        النص: "اختبر"
+        اللون: أخضر
+        عند_الضغط:
+            متغير نص_كبير = يحتوي("مرحبا بك", "مرحبا")
+            اعرض "يحتوي: {نص_كبير}" في: "#out"
+
+    انشئ نصا:
+        المعرف: "out"
+        النص: "النتيجة"
+        الحجم: 16
+        اللون: أسود
+</pre>
+</div>
+<div class="file">
+<h2>📄 test_53_57.byan</h2>
+<h3>التعليقات:</h3><ul>
+<li>out"</li>
+</ul>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: "اختبار 53-57"
+
+الكود:
+    انشئ نافذة:
+        العنوان: "Batch 53-57"
+        لون_الخلفية: بنفسجي
+
+    انشئ عنوانا:
+        النص: "Array + JSON + Regex"
+        الحجم: 24
+        اللون: أسود
+
+    انشئ زر:
+        المعرف: "btn"
+        النص: "اختبر"
+        اللون: أخضر
+        عند_الضغط:
+            متغير ارقام = [1, 2, 3, 4, 5]
+            متغير اكتر = صفّي(ارقام)
+            متغير النص = حوّل_JSON(ارقام)
+            متغير السالب = طابق_نمط("123", "[0-9]+")
+            اعرض "JSON: {النص}" في: "#out"
+
+    انشئ نصا:
+        المعرف: "out"
+        النص: "النتيجة"
+        الحجم: 16
+        اللون: أسود
+</pre>
+</div>
+<div class="file">
+<h2>📄 test_58_62.byan</h2>
+<h3>الكود:</h3><pre>انا_برنامج
+    اسمي: "اختبار 58-62"
+
+الكود:
+    انشئ نافذة:
+        العنوان: "Batch 58-62"
+        لون_الخلفية: بنفسجي
+
+    انشئ شريط_تنقل:
+        المعرف: "nav1"
+
+    انشئ شريط_جانبي:
+        المعرف: "side1"
+
+    انشئ قائمة_طي:
+        العنوان: "قسم 1"
+        المحتوى: "هذا محتوى القسم"
+
+    انشئ نافذة_منبثقة:
+        المعرف: "modal1"
+        العنوان: "اضغط للفتح"
+
+    أضف_تلميح:
+        النص: "هذا تلميح"
+</pre>
+</div>
+</body></html>

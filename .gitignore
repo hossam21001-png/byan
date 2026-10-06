@@ -1,0 +1,82 @@
+# ==================== Python ====================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ==================== Byan ====================
+# مخرجات البناء
+output/
+_build_cache/
+build/
+build_*/
+
+# ملفات تجريبية
+_test_*
+test_*.html
+
+# ==================== Backups ====================
+*.bak
+*.bak_*
+*.bak.*
+*_backup_*
+*_backup
+
+# ==================== Scripts قديمة ====================
+scripts/legacy/
+fix_*.sh
+add_*.sh
+add_*.py
+setup_byan*.sh
+rewrite_parser.sh
+inject_script.sh
+improve_read.sh
+ensure_assign.sh
+debug_funcs.sh
+
+# ==================== IDE ====================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ==================== OS ====================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==================== Logs ====================
+*.log
+
+# ==================== Data ====================
+byan_data.db
+*.sqlite
+*.sqlite3
+
+# ==================== Output مؤقت ====================
+playground.html
+
+# ==================== Misc ====================
+*.tmp
+*.temp
+.cache/

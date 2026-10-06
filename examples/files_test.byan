@@ -1,0 +1,81 @@
+انا_برنامج
+    اسمي: اختبار الملفات
+    أنظمة_التشغيل: "الكل"
+
+الكود:
+    أنشئ_ملفًا:
+        الاسم: "index.html"
+        المسار: "./"
+        المحتوى:
+            """
+            <!DOCTYPE html>
+            <html lang="ar" dir="rtl">
+            <head>
+                <meta charset="UTF-8">
+                <title>الملفات</title>
+                <link rel="stylesheet" href="style.css">
+            </head>
+            <body>
+                <h1>اختبار API الملفات</h1>
+                <button id="create">أنشئ ملف</button>
+                <button id="read">اقرأ الملف</button>
+                <p id="output"></p>
+            </body>
+            </html>
+            """
+
+    أنشئ_ملفًا:
+        الاسم: "style.css"
+        المسار: "./"
+        المحتوى:
+            """
+            body {
+                font-family: 'Cairo', sans-serif;
+                background: linear-gradient(135deg, #30cfd0, #330867);
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                margin: 0;
+            }
+            h1 { font-size: 28px; }
+            button {
+                padding: 12px 30px;
+                font-size: 16px;
+                border-radius: 10px;
+                border: none;
+                cursor: pointer;
+                background: white;
+                color: #330867;
+                font-weight: bold;
+                margin: 5px;
+            }
+            #output {
+                font-size: 20px;
+                margin-top: 20px;
+                max-width: 600px;
+                text-align: center;
+            }
+            """
+
+    أنشئ_ملفًا:
+        الاسم: "script.js"
+        المسار: "./"
+        المحتوى:
+            """
+            // فارغ
+            """
+
+    أنشئ زر:
+        المعرف: "create"
+        النص: "أنشئ ملف"
+        عند_الضغط:
+            اعرض_في "جاري الإنشاء..." في: "#output"
+
+    أنشئ زر:
+        المعرف: "read"
+        النص: "اقرأ الملف"
+        عند_الضغط:
+            اعرض_في "جاري القراءة..." في: "#output"
